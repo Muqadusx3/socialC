@@ -21,10 +21,10 @@ export default function HomePage() {
    
 
     useEffect(() => {
-        const id = localStorage.getItem('user_id');
-        const authToken = localStorage.getItem('token');
-        setUserId(id);
-        setToken(authToken);
+        const userId = localStorage.getItem('userId');
+        const token = localStorage.getItem('token');
+        setUserId(userId);
+        setToken(token);
     }, []);
 
     useEffect(() => {
